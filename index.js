@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send("home")
 })
 
-// app.use('/api/users', userRouter)
+app.use('/api/users', userRouter)
 
 mongoose.connect('mongodb+srv://fahemeducaton:Qwerty123456789@cluster0.br1cqsp.mongodb.net/')
         .then(() => app.listen(port))
